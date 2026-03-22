@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gov Portal</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="navbar">
+
+    <!-- LOGO -->
+    <div class="logo">
+        <img src="./images/white-logo.webp" alt="logo">
+    </div>
+
+    <!-- HAMBURGER -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <!-- MENU -->
+    <ul class="nav-links" id="navLinks">
+<li class="dropdown">
+    <a href="#" onclick="toggleDropdown(event)">Home ▾</a>
+    
+    <ul class="dropdown-content" id="dropdown">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="home1.html">Home 1</a></li>
+    </ul>
+</li>
+
+        <li><a href="login.html">Login</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+</div>
+
+
+<section class="about-hero-new">
+    <div class="overlay-box">
+        <h1>About Smart City</h1>
+        <p>Innovating urban life with smart infrastructure and digital governance</p>
+    </div>
+</section>
+
+
+
+<section class="why-choose reveal">
+    <h2>Why Choose Smart City</h2>
+
+    <div class="why-container">
+
+        <div class="why-card">
+            <div class="icon">🏙</div>
+            <h3>Modern Infrastructure</h3>
+            <p>Advanced urban planning and smart development</p>
+        </div>
+
+        <div class="why-card">
+            <div class="icon">⚡</div>
+            <h3>Smart Technology</h3>
+            <p>AI-based solutions for efficient city management</p>
+        </div>
+
+        <div class="why-card">
+            <div class="icon">🌱</div>
+            <h3>Sustainability</h3>
+            <p>Eco-friendly initiatives for green environment</p>
+        </div>
+
+        <div class="why-card">
+            <div class="icon">🔒</div>
+            <h3>Safety & Security</h3>
+            <p>Advanced surveillance and public safety systems</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="timeline-section reveal">
+    <h2>Our Journey</h2>
+
+    <div class="timeline">
+
+        <div class="timeline-box">
+            <h3>2020</h3>
+            <p>Smart City Mission Initiated</p>
+        </div>
+
+        <div class="timeline-box">
+            <h3>2022</h3>
+            <p>Infrastructure Development Started</p>
+        </div>
+
+        <div class="timeline-box">
+            <h3>2024</h3>
+            <p>Digital Services Implemented</p>
+        </div>
+
+        <div class="timeline-box">
+            <h3>2026</h3>
+            <p>AI Smart Systems Deployed</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section class="team-section reveal">
+    <h2>Our Team</h2>
+
+    <div class="team-container">
+
+        <div class="team-card">
+            <img src="./images/project director.webp">
+            <h3>Project Director</h3>
+            <p>Leading smart city initiatives</p>
+        </div>
+
+        <div class="team-card">
+            <img src="./images/urban planner.webp">
+            <h3>Urban Planner</h3>
+            <p>Designing modern infrastructure</p>
+        </div>
+
+        <div class="team-card">
+            <img src="./images/tech lead.webp">
+            <h3>Tech Lead</h3>
+            <p>Handling smart technologies</p>
+        </div>
+
+        <div class="team-card">
+            <img src="./images/operation head.webp">
+            <h3>Operations Head</h3>
+            <p>Managing city operations</p>
+        </div>
+
+    </div>
+</section>
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- ABOUT -->
+        <div class="footer-box">
+            <h3>Smart City Portal</h3>
+            <p>Building smart, sustainable and digital urban infrastructure for a better future.</p>
+        </div>
+
+        <!-- LINKS -->
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+
+        <!-- SERVICES -->
+        <div class="footer-box">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="#">Transport</a></li>
+                <li><a href="#">Utilities</a></li>
+                <li><a href="#">Planning</a></li>
+                <li><a href="#">Safety</a></li>
+            </ul>
+        </div>
+
+        <!-- SOCIAL -->
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="404.html"><i class="fa-brands fa-globe"></i></a>
+                <a href="404.html"><i class="fa-brands fa-facebook"></i></a>
+                <a href="404.html"><i class="fa-brands fa-twitter"></i></a>
+                <a href="404.html"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+    </div>
+<div class="footer-box map-box">
+    <h3>Our Location</h3>
+
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps?q=Hyderabad&output=embed"
+            loading="lazy">
+        </iframe>
+    </div>
+</div>
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+        <p>© 2026 Smart City Portal | All Rights Reserved</p>
+    </div>
+
+</footer>
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+    let trigger = window.innerHeight * 0.85;
+
+    reveals.forEach(el => {
+        if (el.getBoundingClientRect().top < trigger) {
+            el.classList.add("active");
+        }
+    });
+});
+</script>
+<script>
+function toggleDropdown(e) {
+    e.preventDefault(); // stop navigation
+    document.getElementById("dropdown").classList.toggle("show");
+}
+</script>
+<script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+}
+
+function toggleDropdown(e) {
+    e.preventDefault();
+    document.getElementById("dropdown").classList.toggle("show");
+}
+
+/* close dropdown when clicking outside */
+window.onclick = function(e) {
+    if (!e.target.closest(".dropdown")) {
+        document.getElementById("dropdown").classList.remove("show");
+    }
+}
+</script>
+
+</body>
+</html>

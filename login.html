@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+/* BACKGROUND */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(11,61,145,0.7), rgba(11,61,145,0.7)),
+    url('https://images.unsplash.com/photo-1508057198894-247b23fe5ade');
+    background-size: cover;
+    background-position: center;
+}
+
+/* CONTAINER */
+.login-container {
+    
+    background: white;
+    padding: 30px;
+    width: 320px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    animation: fadeIn 0.8s ease;
+    
+}
+
+/* TITLE */
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+/* INPUTS */
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* BUTTON */
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background: #0b3d91;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background: #062c6b;
+}
+
+/* LINKS */
+.login-container p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.login-container a {
+    color: #0b3d91;
+    text-decoration: none;
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    color: #0b3d91;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: block;
+    text-align: left;
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+}
+/* ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MOBILE */
+@media(max-width:400px){
+    .login-container {
+        width: 90%;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<div class="login-container">
+
+    <button class="back-btn" onclick="goBack()">← Back</button>
+    <h2>Login</h2>
+
+    <form onsubmit="return loginUser()">
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <p><a href="404.html">Forgot Password?</a></p>
+</div>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+<script>
+function loginUser() {
+    alert("Login Successful (Demo)");
+    window.location.href = "index.html";
+    return false;
+}
+</script>
+
+</body>
+</html>

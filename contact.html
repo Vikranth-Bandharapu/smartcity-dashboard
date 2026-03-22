@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gov Portal</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<div class="navbar">
+
+    <!-- LOGO -->
+    <div class="logo">
+        <img src="./images/white-logo.webp" alt="logo">
+    </div>
+
+    <!-- HAMBURGER -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <!-- MENU -->
+    <ul class="nav-links" id="navLinks">
+<li class="dropdown">
+    <a href="#" onclick="toggleDropdown(event)">Home ▾</a>
+    
+    <ul class="dropdown-content" id="dropdown">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="home1.html">Home 1</a></li>
+    </ul>
+</li>
+
+        <li><a href="login.html">Login</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+</div>
+<section class="gov-contact-hero">
+  <div class="container">
+    <h1>Contact Smart City Departments</h1>
+    <p>Choose the department you want to reach and submit your request directly. Official channels only.</p>
+  </div>
+</section>
+
+<section class="gov-contact-departments">
+  <div class="container">
+    <h2>Departments</h2>
+    <div class="dept-tabs">
+      <button class="tab-btn active" data-tab="urban">Urban Planning</button>
+      <button class="tab-btn" data-tab="traffic">Traffic & Transport</button>
+      <button class="tab-btn" data-tab="environment">Environment</button>
+      <button class="tab-btn" data-tab="health">Health & Sanitation</button>
+    </div>
+
+    <div class="dept-content active" id="urban">
+      <h3>Urban Planning Department</h3>
+      <p>Contact Person: Mr. Rajesh Kumar</p>
+      <p>Email: urban@smartcityportal.com</p>
+      <p>Phone: +91 63093 22901</p>
+      <a href="404.html" class="btn-dept">Submit Request</a>
+    </div>
+
+    <div class="dept-content" id="traffic">
+      <h3>Traffic & Transport</h3>
+      <p>Contact Person: Ms. Priya Sharma</p>
+      <p>Email: traffic@smartcityportal.com</p>
+      <p>Phone: +91 63093 22902</p>
+      <a href="404.html" class="btn-dept">Submit Request</a>
+    </div>
+
+    <div class="dept-content" id="environment">
+      <h3>Environment Department</h3>
+      <p>Contact Person: Mr. Anil Verma</p>
+      <p>Email: environment@smartcityportal.com</p>
+      <p>Phone: +91 63093 22903</p>
+      <a href="404.html" class="btn-dept">Submit Request</a>
+    </div>
+
+    <div class="dept-content" id="health">
+      <h3>Health & Sanitation</h3>
+      <p>Contact Person: Dr. Meera Iyer</p>
+      <p>Email: health@smartcityportal.com</p>
+      <p>Phone: +91 63093 22904</p>
+      <a href="404.html" class="btn-dept">Submit Request</a>
+    </div>
+  </div>
+</section>
+<section class="citizen-services">
+    <div class="container">
+        <h2 class="section-title">Citizen Services</h2>
+        <p class="section-subtitle">Access key services quickly and efficiently.</p>
+
+        <div class="services-grid">
+            <a href="404.html" class="service-card">
+                <img src="./images/apply for permit.webp" alt="Apply for Permit">
+                <h3>Apply for Permit</h3>
+                <p>Submit building, business, or event permits online.</p>
+            </a>
+            <a href="404.html" class="service-card">
+                <img src="./images/complaint.webp" alt="Lodge Complaint">
+                <h3>Lodge Complaint</h3>
+                <p>Report city issues like potholes, water, or electricity problems.</p>
+            </a>
+            <a href="404.html" class="service-card">
+                <img src="./images/pay bill.webp" alt="Pay Bills">
+                <h3>Pay Bills</h3>
+                <p>Pay utility bills, taxes, or city services quickly and securely.</p>
+            </a>
+            <a href="404.html" class="service-card">
+                <img src="./images/request letter.webp" alt="Request Documents">
+                <h3>Request Documents</h3>
+                <p>Get official certificates, licenses, and records online.</p>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="city-stats">
+    <div class="container">
+        <h2 class="section-title">City in Numbers</h2>
+        <p class="section-subtitle">A snapshot of our smart city achievements and ongoing projects.</p>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3 class="counter" data-target="120">0</h3>
+                <p>Smart Projects</p>
+            </div>
+            <div class="stat-card">
+                <h3 class="counter" data-target="5000">0</h3>
+                <p>Connected Sensors</p>
+            </div>
+            <div class="stat-card">
+                <h3 class="counter" data-target="150">0</h3>
+                <p>Green Initiatives</p>
+            </div>
+            <div class="stat-card">
+                <h3 class="counter" data-target="300">0</h3>
+                <p>Public Wi-Fi Zones</p>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- ABOUT -->
+        <div class="footer-box">
+            <h3>Smart City Portal</h3>
+            <p>Building smart, sustainable and digital urban infrastructure for a better future.</p>
+        </div>
+
+        <!-- LINKS -->
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+
+        <!-- SERVICES -->
+        <div class="footer-box">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="#">Transport</a></li>
+                <li><a href="#">Utilities</a></li>
+                <li><a href="#">Planning</a></li>
+                <li><a href="#">Safety</a></li>
+            </ul>
+        </div>
+
+        <!-- SOCIAL -->
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="404.html"><i class="fa-brands fa-globe"></i></a>
+                <a href="404.html"><i class="fa-brands fa-facebook"></i></a>
+                <a href="404.html"><i class="fa-brands fa-twitter"></i></a>
+                <a href="404.html"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+    </div>
+<div class="footer-box map-box">
+    <h3>Our Location</h3>
+
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps?q=Hyderabad&output=embed"
+            loading="lazy">
+        </iframe>
+    </div>
+</div>
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+        <p>© 2026 Smart City Portal | All Rights Reserved</p>
+    </div>
+
+</footer>
+<script>
+const counters = document.querySelectorAll('.counter');
+
+counters.forEach(counter => {
+    const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const speed = 200; // lower = faster
+        const increment = target / speed;
+
+        if(count < target){
+            counter.innerText = Math.ceil(count + increment);
+            setTimeout(updateCount, 20);
+        } else {
+            counter.innerText = target;
+        }
+    };
+    updateCount();
+});
+</script>
+<script>
+const tabs = document.querySelectorAll('.tab-btn');
+const contents = document.querySelectorAll('.dept-content');
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    // Remove active class from all tabs
+    tabs.forEach(t => t.classList.remove('active'));
+    // Add active to clicked tab
+    tab.classList.add('active');
+
+    // Show corresponding content
+    const target = tab.getAttribute('data-tab');
+    contents.forEach(c => c.classList.remove('active'));
+    document.getElementById(target).classList.add('active');
+  });
+});
+</script>
+<script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+}
+
+function toggleDropdown(e) {
+    e.preventDefault();
+    document.getElementById("dropdown").classList.toggle("show");
+}
+
+/* close dropdown when clicking outside */
+window.onclick = function(e) {
+    if (!e.target.closest(".dropdown")) {
+        document.getElementById("dropdown").classList.remove("show");
+    }
+}
+</script>
+
+</body>
+</html>

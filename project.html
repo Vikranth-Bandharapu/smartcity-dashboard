@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gov Portal</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<div class="navbar">
+
+    <!-- LOGO -->
+    <div class="logo">
+        <img src="./images/white-logo.webp" alt="logo">
+    </div>
+
+    <!-- HAMBURGER -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <!-- MENU -->
+     <ul class="nav-links" id="navLinks">
+<li class="dropdown">
+    <a href="#" onclick="toggleDropdown(event)">Home ▾</a>
+    
+    <ul class="dropdown-content" id="dropdown">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="home1.html">Home 1</a></li>
+    </ul>
+</li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+</div>
+<section class="projects-hero-advanced">
+
+    <div class="hero-content">
+        <h1>Smart City Projects</h1>
+        <p>Transforming urban life through innovation and technology</p>
+
+        <!-- STATS -->
+        <div class="hero-stats">
+            <div>
+                <h2>120+</h2>
+                <span>Projects</span>
+            </div>
+            <div>
+                <h2>50+</h2>
+                <span>Cities</span>
+            </div>
+            <div>
+                <h2>10L+</h2>
+                <span>Citizens Benefited</span>
+            </div>
+        </div>
+    </div>
+
+</section> 
+<section class="showcase">
+
+    <div class="showcase-container">
+
+        <!-- LEFT CONTENT -->
+        <div class="showcase-text">
+            <h2>Building Future-Ready Cities</h2>
+            <p>
+                Smart infrastructure, digital governance, and sustainable development 
+                are transforming urban living across the nation.
+            </p>
+
+            <div class="showcase-buttons">
+                <a href="project.html" class="btn">Explore Projects</a>
+                <a href="contact.html" class="btn-outline">Contact Us</a>
+            </div>
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="showcase-image">
+            <img src="./images/smart utilities.webp">
+        </div>
+
+    </div>
+
+</section>
+<section class="project-gallery">
+
+    <h2>Project Gallery</h2>
+
+    <div class="gallery-container">
+
+        <div class="gallery-card">
+            <img src="./images/metro rail.webp">
+            <div class="overlay">
+                <h3>Metro Rail</h3>
+            </div>
+        </div>
+
+        <div class="gallery-card">
+            <img src="./images/smart roads.webp">
+            <div class="overlay">
+                <h3>Smart Roads</h3>
+            </div>
+        </div>
+
+        <div class="gallery-card">
+            <img src="./images/solar energy.webp">
+            <div class="overlay">
+                <h3>Solar Energy</h3>
+            </div>
+        </div>
+
+        <div class="gallery-card">
+            <img src="./images/digital services.webp">
+            <div class="overlay">
+                <h3>Digital Services</h3>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="smart-impact">
+
+    <h2>Smart City Impact</h2>
+
+    <div class="impact-container">
+
+        <div class="impact-card">
+            <h3>🚦 Traffic Reduction</h3>
+            <p>AI-based traffic systems reducing congestion</p>
+        </div>
+
+        <div class="impact-card">
+            <h3>💡 Energy Efficiency</h3>
+            <p>Smart grids optimizing electricity usage</p>
+        </div>
+
+        <div class="impact-card">
+            <h3>🌱 Green Environment</h3>
+            <p>Eco-friendly solutions improving sustainability</p>
+        </div>
+
+        <div class="impact-card">
+            <h3>📡 Digital Access</h3>
+            <p>Better connectivity for citizens and services</p>
+        </div>
+
+    </div>
+
+</section>
+<section class="highlights">
+
+    <h2>Key Highlights</h2>
+
+    <div class="highlights-container">
+
+        <div class="highlight-card">
+            <div class="icon">🏗️</div>
+            <h3>Infrastructure</h3>
+            <p>Modern roads, bridges and smart urban planning.</p>
+        </div>
+
+        <div class="highlight-card">
+            <div class="icon">💻</div>
+            <h3>Digital Services</h3>
+            <p>Seamless online governance and citizen services.</p>
+        </div>
+
+        <div class="highlight-card">
+            <div class="icon">🌱</div>
+            <h3>Sustainability</h3>
+            <p>Eco-friendly initiatives for a greener future.</p>
+        </div>
+
+        <div class="highlight-card">
+            <div class="icon">🚦</div>
+            <h3>Smart Mobility</h3>
+            <p>Intelligent traffic and transport systems.</p>
+        </div>
+
+    </div>
+
+</section>
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- ABOUT -->
+        <div class="footer-box">
+            <h3>Smart City Portal</h3>
+            <p>Building smart, sustainable and digital urban infrastructure for a better future.</p>
+        </div>
+
+        <!-- LINKS -->
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+
+        <!-- SERVICES -->
+        <div class="footer-box">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="#">Transport</a></li>
+                <li><a href="#">Utilities</a></li>
+                <li><a href="#">Planning</a></li>
+                <li><a href="#">Safety</a></li>
+            </ul>
+        </div>
+
+        <!-- SOCIAL -->
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="404.html"><i class="fa-brands fa-globe"></i></a>
+                <a href="404.html"><i class="fa-brands fa-facebook"></i></a>
+                <a href="404.html"><i class="fa-brands fa-twitter"></i></a>
+                <a href="404.html"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-box map-box">
+    <h3>Our Location</h3>
+
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps?q=Hyderabad&output=embed"
+            loading="lazy">
+        </iframe>
+    </div>
+</div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+        <p>© 2026 Smart City Portal | All Rights Reserved</p>
+    </div>
+
+</footer>
+<script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+}
+
+function toggleDropdown(e) {
+    e.preventDefault();
+    document.getElementById("dropdown").classList.toggle("show");
+}
+
+/* close dropdown when clicking outside */
+window.onclick = function(e) {
+    if (!e.target.closest(".dropdown")) {
+        document.getElementById("dropdown").classList.remove("show");
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gov Portal</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loader">
+    <div class="spinner"></div>
+</div>
+<div class="navbar">
+
+    <!-- LOGO -->
+    <div class="logo">
+        <img src="./images/white-logo.webp" alt="logo">
+    </div>
+
+    <!-- HAMBURGER -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <!-- MENU -->
+ <ul class="nav-links" id="navLinks">
+<li class="dropdown">
+    <a href="#" onclick="toggleDropdown(event)">Home ▾</a>
+    
+    <ul class="dropdown-content" id="dropdown">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="home1.html">Home 1</a></li>
+    </ul>
+</li>
+
+        <li><a href="login.html">Login</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+</div>
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Smart City Development Portal</h1>
+        <p>Building Sustainable, Connected and Future-Ready Cities</p>
+        <button onclick="alert('Explore Projects')">Explore Projects</button>
+    </div>
+</section>
+
+<!-- SMART SERVICES -->
+<section class="services reveal">
+    <h2>Urban Services</h2>
+
+    <div class="service-cards">
+
+        <div class="card">
+            <h3>🏗 Infrastructure</h3>
+            <p>Roads, bridges and smart urban planning projects</p>
+        </div>
+
+        <div class="card">
+            <h3>🚦 Smart Traffic</h3>
+            <p>AI-based traffic management and monitoring</p>
+        </div>
+
+        <div class="card">
+            <h3>💡 Smart Utilities</h3>
+            <p>Electricity, water and waste management systems</p>
+        </div>
+
+        <div class="card">
+            <h3>🌱 Sustainability</h3>
+            <p>Green energy and eco-friendly city initiatives</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- PROJECTS SECTION -->
+<section class="projects reveal">
+    <h2>Smart City Projects</h2>
+
+    <div class="project-cards">
+
+        <div class="project-card">
+            <img src="./images/project card1.webp" alt="">
+            <div class="project-info">
+                <h3>Smart Roads</h3>
+                <p>AI-enabled traffic and smart road systems</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="./images/project card2.webp" alt="">
+            <div class="project-info">
+                <h3>Urban Housing</h3>
+                <p>Modern housing infrastructure for citizens</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="./images/project card3.webp" alt="">
+            <div class="project-info">
+                <h3>Smart Lighting</h3>
+                <p>Energy efficient street lighting systems</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="./images/project card4.webp" alt="">
+            <div class="project-info">
+                <h3>Green Energy</h3>
+                <p>Solar and renewable energy initiatives</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- INITIATIVES SECTION -->
+<section class="initiatives reveal">
+    <h2>City Initiatives</h2>
+
+    <div class="initiative-cards">
+
+        <div class="initiative-card">
+            <h3>Digital Governance</h3>
+            <p>Online services for better citizen experience</p>
+            <button onclick="open404()">View Details</button>
+        </div>
+
+        <div class="initiative-card">
+            <h3>Smart Transport</h3>
+            <p>Integrated transport and traffic solutions</p>
+            <button onclick="open404()">View Details</button>
+        </div>
+
+        <div class="initiative-card">
+            <h3>Urban Planning</h3>
+            <p>Modern infrastructure and city development</p>
+            <button onclick="open404()">View Details</button>
+        </div>
+
+        <div class="initiative-card">
+            <h3>Public Safety</h3>
+            <p>Smart surveillance and safety systems</p>
+            <button onclick="open404()">View Details</button>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<section class="stats reveal">
+    <div class="stat-box">
+        <h2 class="counter" data-target="120">0</h2>
+        <p>Projects Completed</p>
+    </div>
+
+    <div class="stat-box">
+        <h2 class="counter" data-target="50">0</h2>
+        <p>Smart Services</p>
+    </div>
+
+    <div class="stat-box">
+        <h2 class="counter" data-target="10000">0</h2>
+        <p>Citizens Benefited</p>
+    </div>
+
+    <div class="stat-box">
+        <h2 class="counter" data-target="25">0</h2>
+        <p>Ongoing Projects</p>
+    </div>
+</section>
+
+<section class="news reveal">
+    <h2>Latest Updates</h2>
+
+    <div class="news-cards">
+
+        <div class="news-card">
+            <h3>Smart Traffic System Launched</h3>
+            <p>New AI traffic control system implemented</p>
+        </div>
+
+        <div class="news-card">
+            <h3>Green Energy Initiative</h3>
+            <p>Solar panels installed across city</p>
+        </div>
+
+        <div class="news-card">
+            <h3>Urban Housing Project</h3>
+            <p>Affordable housing for citizens</p>
+        </div>
+
+    </div>
+</section>
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- ABOUT -->
+        <div class="footer-box">
+            <h3>Smart City Portal</h3>
+            <p>Building smart, sustainable and digital urban infrastructure for a better future.</p>
+        </div>
+
+        <!-- LINKS -->
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+
+        <!-- SERVICES -->
+        <div class="footer-box">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="#">Transport</a></li>
+                <li><a href="#">Utilities</a></li>
+                <li><a href="#">Planning</a></li>
+                <li><a href="#">Safety</a></li>
+            </ul>
+        </div>
+
+        <!-- SOCIAL -->
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="404.html"><i class="fa-brands fa-globe"></i></a>
+                <a href="404.html"><i class="fa-brands fa-facebook"></i></a>
+                <a href="404.html"><i class="fa-brands fa-twitter"></i></a>
+                <a href="404.html"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+    </div>
+<div class="footer-box map-box">
+    <h3>Our Location</h3>
+
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps?q=Hyderabad&output=embed"
+            loading="lazy">
+        </iframe>
+    </div>
+</div>
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+        <p>© 2026 Smart City Portal | All Rights Reserved</p>
+    </div>
+
+</footer>
+
+
+<script>
+function toggleDropdown(e) {
+    e.preventDefault(); // stop navigation
+    document.getElementById("dropdown").classList.toggle("show");
+}
+</script>
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+    let trigger = window.innerHeight * 0.85;
+
+    reveals.forEach(el => {
+        let top = el.getBoundingClientRect().top;
+
+        if (top < trigger) {
+            el.classList.add("active");
+        }
+    });
+});
+</script>
+
+<script>
+window.addEventListener("load", () => {
+    document.getElementById("loader").style.display = "none";
+});
+</script>
+<script>
+const counters = document.querySelectorAll(".counter");
+
+counters.forEach(counter => {
+    counter.innerText = "0";
+
+    const updateCounter = () => {
+        const target = +counter.getAttribute("data-target");
+        const c = +counter.innerText;
+
+        const increment = target / 100;
+
+        if (c < target) {
+            counter.innerText = Math.ceil(c + increment);
+            setTimeout(updateCounter, 20);
+        } else {
+            counter.innerText = target;
+        }
+    };
+
+    updateCounter();
+});
+</script>
+<script>
+/* 404 redirect */
+function open404() {
+    window.location.href = "404.html";
+}
+
+/* SCROLL ANIMATION */
+const cards2 = document.querySelectorAll(".initiative-card");
+
+window.addEventListener("scroll", () => {
+    let trigger = window.innerHeight * 0.85;
+
+    cards2.forEach(card => {
+        let top = card.getBoundingClientRect().top;
+
+        if (top < trigger) {
+            card.classList.add("show");
+        }
+    });
+});
+</script>
+<script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+}
+
+function toggleDropdown(e) {
+    e.preventDefault();
+    document.getElementById("dropdown").classList.toggle("show");
+}
+
+/* close dropdown when clicking outside */
+window.onclick = function(e) {
+    if (!e.target.closest(".dropdown")) {
+        document.getElementById("dropdown").classList.remove("show");
+    }
+}
+</script>
+<script>
+const cards = document.querySelectorAll(".project-card");
+
+window.addEventListener("scroll", () => {
+    let triggerBottom = window.innerHeight * 0.85;
+
+    cards.forEach(card => {
+        let cardTop = card.getBoundingClientRect().top;
+
+        if (cardTop < triggerBottom) {
+            card.classList.add("show");
+        }
+    });
+});
+</script>
+</body>
+</html>

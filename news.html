@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gov Portal</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<div class="navbar">
+
+    <!-- LOGO -->
+    <div class="logo">
+        <img src="./images/white-logo.webp" alt="logo">
+    </div>
+
+    <!-- HAMBURGER -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <!-- MENU -->
+    <ul class="nav-links" id="navLinks">
+<li class="dropdown">
+    <a href="#" onclick="toggleDropdown(event)">Home ▾</a>
+    
+    <ul class="dropdown-content" id="dropdown">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="home1.html">Home 1</a></li>
+    </ul>
+</li>
+
+        <li><a href="login.html">Login</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+</div>
+<section class="news-section">
+    <div class="container">
+        <h2 class="section-title">Latest News</h2>
+        <p class="section-subtitle">Stay updated with the latest projects, initiatives, and city developments.</p>
+
+        <div class="news-grid">
+            <div class="news-card">
+                <img src="./images/singal launch.webp" alt="News 1">
+                <div class="news-content">
+                    <h3>Smart Traffic Signals Launched</h3>
+                    <p>The city has implemented smart traffic signals to reduce congestion and improve safety.</p>
+                    <a href="404.html" class="news-btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <img src="./images/green inagration card.webp" alt="News 2">
+                <div class="news-content">
+                    <h3>New Green Park Inauguration</h3>
+                    <p>A new eco-friendly green park has been inaugurated to promote sustainability and wellness.</p>
+                    <a href="404.html" class="news-btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <img src="./images/city wifi.webp" alt="News 3">
+                <div class="news-content">
+                    <h3>City Wi-Fi Expansion</h3>
+                    <p>Free high-speed Wi-Fi zones are now available in more areas to enhance connectivity.</p>
+                    <a href="404.html" class="news-btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <img src="./images/electric bus card.webp" alt="News 4">
+                <div class="news-content">
+                    <h3>Electric Buses Introduced</h3>
+                    <p>Electric buses are introduced to promote green mobility and reduce pollution.</p>
+                    <a href="404.html" class="news-btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="stats-section">
+    <div class="container">
+        <h2 class="section-title">City in Numbers</h2>
+        <p class="section-subtitle">Some quick facts showing how our city is becoming smarter and better every day.</p>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3 class="counter" data-target="120">0</h3>
+                <p>Smart Projects</p>
+            </div>
+            <div class="stat-card">
+                <h3 class="counter" data-target="5000">0</h3>
+                <p>Connected Sensors</p>
+            </div>
+            <div class="stat-card">
+                <h3 class="counter" data-target="150">0</h3>
+                <p>Green Initiatives</p>
+            </div>
+            <div class="stat-card">
+                <h3 class="counter" data-target="300">0</h3>
+                <p>Public Wi-Fi Zones</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-subtitle">Have questions or suggestions? Reach out to us and be part of a smarter city.</p>
+
+        <div class="contact-grid">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <div class="info-item">
+                    <h3>Address</h3>
+                    <p>123 Smart City Avenue, Your City, Country</p>
+                </div>
+                <div class="info-item">
+                    <h3>Email</h3>
+                    <p>info@smartcityportal.com</p>
+                </div>
+                <div class="info-item">
+                    <h3>Phone</h3>
+                    <p>+91 9876543210</p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="gov-announcements">
+    <div class="container">
+        <h2 class="section-title">Government Announcements</h2>
+        <p class="section-subtitle">Stay informed with the latest official updates and alerts.</p>
+
+        <div class="announcement-main">
+            <div class="announcement-large">
+                <h3>City Water Supply Maintenance</h3>
+                <p>Water supply will be interrupted in certain areas on 25th March 2026 for maintenance work. Residents are advised to store water in advance.</p>
+                <a href="404.html" class="btn-announcement">Read More</a>
+            </div>
+
+            <div class="announcement-list">
+                <div class="announcement-item">
+                    <span class="icon">⚠️</span>
+                    <p>Traffic diversion on Main Street due to road repair.</p>
+                </div>
+                <div class="announcement-item">
+                    <span class="icon">📢</span>
+                    <p>Public meeting regarding city waste management on 28th March 2026.</p>
+                </div>
+                <div class="announcement-item">
+                    <span class="icon">🏥</span>
+                    <p>Health camp organized at Central Park from 26th to 27th March 2026.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- ABOUT -->
+        <div class="footer-box">
+            <h3>Smart City Portal</h3>
+            <p>Building smart, sustainable and digital urban infrastructure for a better future.</p>
+        </div>
+
+        <!-- LINKS -->
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+
+        <!-- SERVICES -->
+        <div class="footer-box">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="#">Transport</a></li>
+                <li><a href="#">Utilities</a></li>
+                <li><a href="#">Planning</a></li>
+                <li><a href="#">Safety</a></li>
+            </ul>
+        </div>
+
+        <!-- SOCIAL -->
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="404.html"><i class="fa-brands fa-globe"></i></a>
+                <a href="404.html"><i class="fa-brands fa-facebook"></i></a>
+                <a href="404.html"><i class="fa-brands fa-twitter"></i></a>
+                <a href="404.html"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+    </div>
+<div class="footer-box map-box">
+    <h3>Our Location</h3>
+
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps?q=Hyderabad&output=embed"
+            loading="lazy">
+        </iframe>
+    </div>
+</div>
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+        <p>© 2026 Smart City Portal | All Rights Reserved</p>
+    </div>
+
+</footer>
+<script>
+const counters = document.querySelectorAll('.counter');
+
+counters.forEach(counter => {
+    const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const speed = 200; // lower = faster
+        const increment = target / speed;
+
+        if(count < target){
+            counter.innerText = Math.ceil(count + increment);
+            setTimeout(updateCount, 20);
+        } else {
+            counter.innerText = target;
+        }
+    };
+    updateCount();
+});
+</script>
+<script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+}
+
+function toggleDropdown(e) {
+    e.preventDefault();
+    document.getElementById("dropdown").classList.toggle("show");
+}
+
+/* close dropdown when clicking outside */
+window.onclick = function(e) {
+    if (!e.target.closest(".dropdown")) {
+        document.getElementById("dropdown").classList.remove("show");
+    }
+}
+</script>
+
+</body>
+</html>

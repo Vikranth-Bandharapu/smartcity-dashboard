@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gov Portal</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<div class="navbar">
+
+    <!-- LOGO -->
+    <div class="logo">
+        <img src="./images/white-logo.webp" alt="logo">
+    </div>
+
+    <!-- HAMBURGER -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <!-- MENU -->
+    <ul class="nav-links" id="navLinks">
+<li class="dropdown">
+    <a href="#" onclick="toggleDropdown(event)">Home ▾</a>
+    
+    <ul class="dropdown-content" id="dropdown">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="home1.html">Home 1</a></li>
+    </ul>
+</li>
+
+        <li><a href="login.html">Login</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+</div>
+<!-- Advanced Hero Section -->
+<section class="hero-advanced">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1 class="hero-title">Our Services</h1>
+        <p class="hero-subtitle">Innovative solutions for a smarter, sustainable, and connected city.</p>
+     <a href="404.html" class="hero-btn">Explore Services</a>
+    </div>
+    
+    <!-- Floating shapes for animation -->
+    <div class="floating-shape shape1"></div>
+    <div class="floating-shape shape2"></div>
+    <div class="floating-shape shape3"></div>
+</section>
+
+<section id="services-section" class="services-section">
+    <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-subtitle">Explore the services we provide to make our city smarter and sustainable.</p>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🏙️</div>
+                <h3>Urban Planning</h3>
+                <p>Efficient city planning for sustainable growth and infrastructure.</p>
+                <a href="404.html" class="learn-more-btn">Learn More</a>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">💡</div>
+                <h3>Smart Utilities</h3>
+                <p>Intelligent management of electricity, water, and waste systems.</p>
+                <a href="404.html" class="learn-more-btn">Learn More</a>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">🚦</div>
+                <h3>Traffic Management</h3>
+                <p>Real-time traffic monitoring to reduce congestion and improve safety.</p>
+                <a href="404.html" class="learn-more-btn">Learn More</a>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">🌳</div>
+                <h3>Green Initiatives</h3>
+                <p>Promoting sustainability, green spaces, and eco-friendly projects.</p>
+                <a href="404.html" class="learn-more-btn">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="highlights-section">
+    <div class="container">
+        <h2 class="section-title">Highlighted Services</h2>
+        <p class="section-subtitle">Our key services that make the city smarter and more efficient.</p>
+
+        <div class="highlights-grid">
+            <div class="highlight-card wow">
+                <div class="highlight-icon">🏢</div>
+                <h3>Urban Infrastructure</h3>
+                <p>Modernizing city infrastructure with smart designs and sustainable planning.</p>
+                <a href="404.html" class="learn-more-btn">Learn More</a>
+            </div>
+
+            <div class="highlight-card wow">
+                <div class="highlight-icon">🌐</div>
+                <h3>Digital Governance</h3>
+                <p>Efficient citizen services through digital platforms and automation.</p>
+                <a href="404.html" class="learn-more-btn">Learn More</a>
+            </div>
+
+            <div class="highlight-card wow">
+                <div class="highlight-icon">🚴‍♂️</div>
+                <h3>Smart Mobility</h3>
+                <p>Optimizing traffic flow, promoting green transport and reducing congestion.</p>
+                <a href="404.html" class="learn-more-btn">Learn More</a>
+            </div>
+
+            <div class="highlight-card wow">
+                <div class="highlight-icon">🌿</div>
+                <h3>Eco-Friendly Projects</h3>
+                <p>Green spaces, renewable energy, and sustainable city initiatives.</p>
+                <a href="404.html" class="learn-more-btn">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="image-section">
+    <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Explore some of the innovative projects and initiatives in our city.</p>
+
+        <div class="image-grid">
+            <div class="image-card">
+                <img src="./images/urban planing.webp" alt="Urban Planning">
+                <div class="image-overlay">
+                    <h3>Urban Planning</h3>
+                    <a href="404.html" class="btn-overlay">Learn More</a>
+                </div>
+            </div>
+
+            <div class="image-card">
+                <img src="./images/smart utilities.webp" alt="Smart Utilities">
+                <div class="image-overlay">
+                    <h3>Smart Utilities</h3>
+                    <a href="404.html" class="btn-overlay">Learn More</a>
+                </div>
+            </div>
+
+            <div class="image-card">
+                <img src="./images/trafic management.webp" alt="Traffic Management">
+                <div class="image-overlay">
+                    <h3>Traffic Management</h3>
+                    <a href="404.html" class="btn-overlay">Learn More</a>
+                </div>
+            </div>
+
+            <div class="image-card">
+                <img src="./images/green mangment.webp" alt="Green Initiatives">
+                <div class="image-overlay">
+                    <h3>Green Initiatives</h3>
+                    <a href="404.html" class="btn-overlay">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="overlap-image-section">
+    <div class="container">
+        <h2 class="section-title">City Innovations</h2>
+        <p class="section-subtitle">Our innovative projects shaping a smarter city.</p>
+
+        <div class="overlap-images">
+            <div class="image-item" style="background-image: url('./images/urban\ card.webp');">
+                <span>Urban Planning</span>
+            </div>
+            <div class="image-item" style="background-image: url('./images/smart\ city\ card.webp');">
+                <span>Smart Utilities</span>
+            </div>
+            <div class="image-item" style="background-image: url('./images/traffic\ mangment\ card.webp');">
+                <span>Traffic Management</span>
+            </div>
+            <div class="image-item" style="background-image: url('./images/grren\ card.webp');">
+                <span>Green Initiatives</span>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- ABOUT -->
+        <div class="footer-box">
+            <h3>Smart City Portal</h3>
+            <p>Building smart, sustainable and digital urban infrastructure for a better future.</p>
+        </div>
+
+        <!-- LINKS -->
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+
+        <!-- SERVICES -->
+        <div class="footer-box">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="#">Transport</a></li>
+                <li><a href="#">Utilities</a></li>
+                <li><a href="#">Planning</a></li>
+                <li><a href="#">Safety</a></li>
+            </ul>
+        </div>
+
+        <!-- SOCIAL -->
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="404.html"><i class="fa-brands fa-globe"></i></a>
+                <a href="404.html"><i class="fa-brands fa-facebook"></i></a>
+                <a href="404.html"><i class="fa-brands fa-twitter"></i></a>
+                <a href="404.html"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+    </div>
+<div class="footer-box map-box">
+    <h3>Our Location</h3>
+
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps?q=Hyderabad&output=embed"
+            loading="lazy">
+        </iframe>
+    </div>
+</div>
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+        <p>© 2026 Smart City Portal | All Rights Reserved</p>
+    </div>
+
+</footer>
+<script>
+    const wowElements = document.querySelectorAll('.wow');
+
+    function revealOnScroll() {
+        const triggerBottom = window.innerHeight * 0.85;
+
+        wowElements.forEach(el => {
+            const elementTop = el.getBoundingClientRect().top;
+
+            if(elementTop < triggerBottom){
+                el.classList.add('show');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+</script>
+<script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+}
+
+function toggleDropdown(e) {
+    e.preventDefault();
+    document.getElementById("dropdown").classList.toggle("show");
+}
+
+/* close dropdown when clicking outside */
+window.onclick = function(e) {
+    if (!e.target.closest(".dropdown")) {
+        document.getElementById("dropdown").classList.remove("show");
+    }
+}
+</script>
+
+</body>
+</html>
